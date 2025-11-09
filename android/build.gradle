@@ -2,20 +2,35 @@
 
 buildscript {
   ext {
-    // ✅ Add this line — defines Kotlin version manually
-    kotlinVersion = '2.0.21'
+    kotlinVersion = '2.0.21' // or downgrade to 1.9.24 if issues persist
   }
 
   repositories {
     google()
     mavenCentral()
+    maven { url 'https://plugins.gradle.org/m2/' } // ✅ keep this
   }
 
   dependencies {
     classpath("com.android.tools.build:gradle")
     classpath("com.facebook.react:react-native-gradle-plugin")
-    classpath("org.jetbrains.kotlin:kotlin-gitgradle-plugin:$kotlinVersion")
+    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion") // ✅ fixed name
   }
+}
+
+
+buildscript {
+    ext {
+        kotlinVersion = '2.0.21'
+    }
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://plugins.gradle.org/m2/' } // ✅ Add this line
+    }
+    dependencies {
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion") // ✅ correct name
+    }
 }
 
 allprojects {
