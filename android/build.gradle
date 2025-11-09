@@ -1,14 +1,21 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
+// android/build.gradle
+
 buildscript {
   repositories {
     google()
     mavenCentral()
   }
   dependencies {
-    classpath('com.android.tools.build:gradle')
-    classpath('com.facebook.react:react-native-gradle-plugin')
-    classpath('org.jetbrains.kotlin:kotlin-gradle-plugin')
+    // 1. **CRITICAL FIX**: Set the AGP version to a stable release (e.g., 8.3.1)
+    classpath('com.android.tools.build:gradle:8.3.1') 
+    
+    // 2. Set the React Native plugin version (match your RN version, often optional)
+    classpath('com.facebook.react:react-native-gradle-plugin') 
+    
+    // 3. Set the Kotlin plugin version (usually 1.9.0 or higher for modern RN)
+    classpath('org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0') 
   }
 }
 
