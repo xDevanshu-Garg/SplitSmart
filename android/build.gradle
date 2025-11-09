@@ -1,22 +1,14 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
-// android/build.gradle
-
-// android/build.gradle
-// Read the versions from gradle.properties
-def agpVersion = project.properties.get("android.agp.version")
-def kotlinVersion = project.properties.get("android.kotlin.version")
-
 buildscript {
   repositories {
     google()
     mavenCentral()
   }
   dependencies {
-    // Use the variables to set the versions
-    classpath("com.android.tools.build:gradle:$agpVersion")
-    classpath("com.facebook.react:react-native-gradle-plugin")
-    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+    classpath('com.android.tools.build:gradle')
+    classpath('com.facebook.react:react-native-gradle-plugin')
+    classpath('org.jetbrains.kotlin:kotlin-gradle-plugin')
   }
 }
 
