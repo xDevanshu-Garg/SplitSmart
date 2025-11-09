@@ -10,7 +10,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "android": {
       "package": "com.xdevanshugarg.splitsmart",
       "versionCode": 1
@@ -22,6 +24,9 @@
       "eas": {
         "projectId": "27acab0a-d87b-459b-8d62-16b1a2554255"
       }
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }

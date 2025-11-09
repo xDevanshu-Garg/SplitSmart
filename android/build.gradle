@@ -1,36 +1,15 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-  ext {
-    kotlinVersion = '2.0.21' // or downgrade to 1.9.24 if issues persist
-  }
-
   repositories {
     google()
     mavenCentral()
-    maven { url 'https://plugins.gradle.org/m2/' } // ✅ keep this
   }
-
   dependencies {
-    classpath("com.android.tools.build:gradle")
-    classpath("com.facebook.react:react-native-gradle-plugin")
-    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion") // ✅ fixed name
+    classpath('com.android.tools.build:gradle')
+    classpath('com.facebook.react:react-native-gradle-plugin')
+    classpath('org.jetbrains.kotlin:kotlin-gradle-plugin')
   }
-}
-
-
-buildscript {
-    ext {
-        kotlinVersion = '2.0.21'
-    }
-    repositories {
-        google()
-        mavenCentral()
-        maven { url 'https://plugins.gradle.org/m2/' } // ✅ Add this line
-    }
-    dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion") // ✅ correct name
-    }
 }
 
 allprojects {
