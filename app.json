@@ -1,47 +1,27 @@
 {
   "expo": {
-    "name": "rork-app",
-    "slug": "6sjpjt6q6renv81aj7m4i",
+    "name": "SplitSmart",
+    "slug": "splitsmart",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "rork-app",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
     "splash": {
       "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "app.rork.6sjpjt6q6renv81aj7m4i"
-    },
+    "assetBundlePatterns": ["**/*"],
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.madproject.splitsmart",
-      "permissions": [
-        "android.permission.VIBRATE"
-      ]
+      "package": "com.xdevanshugarg.splitsmart",
+      "versionCode": 1
     },
-    "web": {
-      "favicon": "./assets/images/favicon.png"
+    "ios": {
+      "supportsTablet": true
     },
-    "plugins": [
-      [
-        "expo-router",
-        {
-          "origin": "https://rork.com/"
-        }
-      ],
-      "expo-font",
-      "expo-web-browser"
-    ],
-    "experiments": {
-      "typedRoutes": true
+    "extra": {
+      "eas": {
+        "projectId": "27acab0a-d87b-459b-8d62-16b1a2554255"
+      }
     }
   }
 }
