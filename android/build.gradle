@@ -3,20 +3,20 @@
 // android/build.gradle
 
 // android/build.gradle
+// Read the versions from gradle.properties
+def agpVersion = project.properties.get("android.agp.version")
+def kotlinVersion = project.properties.get("android.kotlin.version")
+
 buildscript {
   repositories {
     google()
     mavenCentral()
   }
   dependencies {
-    // 1. FIX: Explicitly set AGP version to a stable release
-    classpath('com.android.tools.build:gradle:8.3.1') 
-
-    // This one often doesn't need a version number, but we'll leave it as is.
-    classpath('com.facebook.react:react-native-gradle-plugin') 
-
-    // This is the corrected line
-    classpath('org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.21')
+    // Use the variables to set the versions
+    classpath("com.android.tools.build:gradle:$agpVersion")
+    classpath("com.facebook.react:react-native-gradle-plugin")
+    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
   }
 }
 
