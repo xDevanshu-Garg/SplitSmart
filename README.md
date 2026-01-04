@@ -14,28 +14,31 @@ Users can create trips, add expenses paid by different members, and view a clear
 ### Screenshots
 
 
-#### 1. Home
-![Home](Screenshot/homepage.jpeg)
+<h4>1. Home</h4>
+<img src="Screenshot/homepage.jpeg" alt="Home" width="300px">
 
-#### 2. Creating a New Trip
-![Create Trip](Screenshot/CreateNewTripPage.jpeg)
+<h4>2. Creating a New Trip</h4>
+<img src="Screenshot/CreateNewTripPage.jpeg" alt="Create Trip" width="300px">
 
-#### 3. Adding Members
-![Add Members](Screenshot/AddingMembers.jpeg)
+<h4>3. Adding Members</h4>
+<img src="Screenshot/AddingMembers.jpeg" alt="Add Members" width="300px">
 
-#### 4. Trip Dashboard
-![Dashboard](Screenshot/DashboardTripDetails.jpeg)
+<h4>4. Trip Dashboard</h4>
+<img src="Screenshot/DashboardTripDetails.jpeg" alt="Dashboard" width="300px">
 
-#### 5. Adding Expenses
-![Add Expense](Screenshot/AddExpense.jpeg)
+<h4>5. Adding Expenses</h4>
+<img src="Screenshot/AddExpense.jpeg" alt="Add Expense" width="300px">
 
-#### 6. Trip Details After All Expenses
-![Trip Details](Screenshot/TripDetailsAfterAllExpenses.jpeg)
+<h4>6. Trip Details After All Expenses</h4>
+<img src="Screenshot/TripDetailsAfterAllExpenses.jpeg" alt="Trip Details" width="300px">
 
-#### 7. Split Summary
-![Summary 1](Screenshot/SplitSummery1.jpeg)
-![Summary 2](Screenshot/SplitSummery2.jpeg)
-![Summary 3](Screenshot/SplitSummery3.jpeg)
+<h4>7. Split Summary</h4>
+
+<div style="display: flex; gap: 10px;">
+  <img src="Screenshot/SplitSummery1.jpeg" alt="Summary 1" width="300px">
+  <img src="Screenshot/SplitSummery2.jpeg" alt="Summary 2" width="300px">
+  <img src="Screenshot/SplitSummery3.jpeg" alt="Summary 3" width="300px">
+</div>creenshot/SplitSummery3.jpeg" alt="Summary 3" width="300px">
 
 
 ---
